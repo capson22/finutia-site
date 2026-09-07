@@ -25,5 +25,5 @@ app. A download link is only shown when the signed manifest points to a canonica
 ## Domain cutover (owner action)
 
 Do not add `CNAME` or change GitHub Pages' custom-domain setting until every word has been approved.
-The staged `app/` page is a source copy for the separate `app.finutia.ai` VPS host; it cannot be hosted
+The staged `app/` page is a source copy for the separate `app.finutia.com` VPS host; it cannot be hosted
 at that subdomain by the same GitHub Pages site.

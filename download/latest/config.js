@@ -1,5 +1,5 @@
 window.FINUTIA_DOWNLOAD_CONFIG = Object.freeze({
-  manifestBaseUrl: "https://api.finutia.ai/updates",
+  manifestBaseUrl: "https://api.finutia.com/updates",
   releaseRepository: "capson22/finutia-site",
   signingPublicKey:
     "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfQMvI7EJIOQW7+pGO9jJDRfW4p46" +

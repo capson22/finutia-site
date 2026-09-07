@@ -7,9 +7,9 @@
     <meta name="theme-color" content="#0d0d14">
     <title>Open Finutia — Draft holding page</title>
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../styles.css" data-production-href="https://finutia.ai/styles.css">
+    <link rel="stylesheet" href="../styles.css" data-production-href="https://finutia.com/styles.css">
     <script>
-      if (location.hostname === "app.finutia.ai") {
+      if (location.hostname === "app.finutia.com") {
         document.currentScript.previousElementSibling.href =
           document.currentScript.previousElementSibling.dataset.productionHref;
       }
@@ -34,7 +34,7 @@
       <p><a class="button button-primary" href="../#downloads" data-marketing-path="#downloads">See the downloads</a></p>
       <div class="notice-card">
         <p>
-          At launch, this page will live at <strong>app.finutia.ai</strong>. The web application will
+          At launch, this page will live at <strong>app.finutia.com</strong>. The web application will
           replace it at the same address when it is ready.
         </p>
       </div>
@@ -45,9 +45,9 @@
       <p class="copyright">© 2026 Capson Enterprises. Draft copy.</p>
     </footer>
     <script>
-      if (location.hostname === "app.finutia.ai") {
+      if (location.hostname === "app.finutia.com") {
         document.querySelectorAll("[data-marketing-path]").forEach(function (link) {
-          link.href = new URL(link.dataset.marketingPath, "https://finutia.ai/").href;
+          link.href = new URL(link.dataset.marketingPath, "https://finutia.com/").href;
         });
       }
     </script>
