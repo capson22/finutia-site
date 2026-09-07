@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#0d0d14">
+    <title>Open Finutia — Draft holding page</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles.css" data-production-href="https://finutia.ai/styles.css">
+    <script>
+      if (location.hostname === "app.finutia.ai") {
+        document.currentScript.previousElementSibling.href =
+          document.currentScript.previousElementSibling.dataset.productionHref;
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="draft-banner" role="note">Draft holding page — awaiting approval.</div>
+    <header class="site-header">
+      <a class="brand" href="../" data-marketing-path="">
+        <span class="brand-mark" aria-hidden="true">F</span><span>Finutia AI</span>
+      </a>
+      <a class="button button-small button-quiet" href="../#downloads" data-marketing-path="#downloads">Downloads</a>
+    </header>
+    <main class="simple-page" id="main">
+      <p class="eyebrow">Web app</p>
+      <h1>Finutia for the web is on its way.</h1>
+      <p>
+        Preview builds for Windows, Android, and Ubuntu are being prepared. Choose your platform on
+        the downloads page while the browser version is being prepared.
+      </p>
+      <p><a class="button button-primary" href="../#downloads" data-marketing-path="#downloads">See the downloads</a></p>
+      <div class="notice-card">
+        <p>
+          At launch, this page will live at <strong>app.finutia.ai</strong>. The web application will
+          replace it at the same address when it is ready.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div><a class="brand footer-brand" href="../" data-marketing-path=""><span class="brand-mark" aria-hidden="true">F</span><span>Finutia AI</span></a></div>
+      <nav aria-label="Legal and support"><a href="../terms/" data-marketing-path="terms/">Terms</a><a href="../privacy/" data-marketing-path="privacy/">Privacy</a><a href="../support/" data-marketing-path="support/">Support</a></nav>
+      <p class="copyright">© 2026 Capson Enterprises. Draft copy.</p>
+    </footer>
+    <script>
+      if (location.hostname === "app.finutia.ai") {
+        document.querySelectorAll("[data-marketing-path]").forEach(function (link) {
+          link.href = new URL(link.dataset.marketingPath, "https://finutia.ai/").href;
+        });
+      }
+    </script>
+  </body>
+</html>
