@@ -232,6 +232,11 @@ h1 {
   letter-spacing: -0.062em;
 }
 
+.hero h1 {
+  padding: 0 0.06em 0.04em 0;
+  letter-spacing: -0.045em;
+}
+
 h1 span {
   background: linear-gradient(105deg, #cbb3ff 8%, #86e8f2 82%);
   background-clip: text;
