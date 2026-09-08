@@ -496,6 +496,86 @@ h3 {
   letter-spacing: 0.1em;
 }
 
+.connections-section {
+  padding-top: 5rem;
+}
+
+.connection-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(20rem, 0.65fr);
+  gap: 1rem;
+}
+
+.connection-panel {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-medium);
+  background: linear-gradient(145deg, rgb(30 30 53 / 72%), rgb(18 18 30 / 78%));
+}
+
+.connection-panel h3 {
+  max-width: 22ch;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+}
+
+.connection-panel > p:not(.panel-label) {
+  color: var(--text-muted);
+}
+
+.panel-label {
+  margin: 0 0 2.8rem;
+  color: #9fe9f3;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.panel-intro {
+  margin-bottom: 1.8rem;
+}
+
+.connector-list {
+  display: grid;
+  margin: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+}
+
+.connector-list div {
+  padding: 1rem 1.2rem 1rem 0;
+  border-top: 1px solid var(--divider);
+}
+
+.connector-list div:nth-child(even) {
+  padding-right: 0;
+  padding-left: 1.2rem;
+  border-left: 1px solid var(--divider);
+}
+
+.connector-list dt {
+  color: var(--text);
+  font-weight: 760;
+}
+
+.connector-list dd {
+  margin: 0.15rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.mcp-panel {
+  background:
+    radial-gradient(circle at 100% 0%, rgb(6 182 212 / 13%), transparent 19rem),
+    radial-gradient(circle at 0% 100%, rgb(124 58 237 / 22%), transparent 22rem),
+    var(--surface-soft);
+}
+
+.mcp-panel p:last-child {
+  margin-bottom: 0;
+}
+
 .control-section {
   display: grid;
   padding-top: 4rem;
@@ -788,6 +868,10 @@ footer p {
     grid-template-columns: 1fr;
   }
 
+  .connection-layout {
+    grid-template-columns: 1fr;
+  }
+
   .control-panel {
     max-width: 42rem;
   }
@@ -856,6 +940,17 @@ footer p {
 
   .feature-number {
     margin-bottom: 2.4rem;
+  }
+
+  .connector-list {
+    grid-template-columns: 1fr;
+  }
+
+  .connector-list div,
+  .connector-list div:nth-child(even) {
+    padding-right: 0;
+    padding-left: 0;
+    border-left: 0;
   }
 
   .control-row {
