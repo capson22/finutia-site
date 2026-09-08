@@ -233,12 +233,18 @@ h1 {
 }
 
 .hero h1 {
-  padding: 0 0.06em 0.04em 0;
-  letter-spacing: -0.045em;
+  padding: 0.04em 0.14em 0.1em 0.03em;
+  margin-left: -0.03em;
+  line-height: 1.12;
+  letter-spacing: 0;
 }
 
 h1 span {
   background: linear-gradient(105deg, #cbb3ff 8%, #86e8f2 82%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 0 0.08em 0 0.02em;
+  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
