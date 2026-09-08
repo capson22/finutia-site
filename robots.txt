@@ -1,2 +1,3 @@
+# Deliberately blocked until the public-launch review is complete.
 User-agent: *
 Disallow: /

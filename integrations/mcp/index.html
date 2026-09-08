@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#0d0d14">
+    <meta name="description" content="Learn how Finutia AI connects compatible MCP servers, discovers and pins their tools, protects credentials, and handles capability changes."><link rel="canonical" href="https://finutia.com/integrations/mcp/">
+    <meta property="og:type" content="article"><meta property="og:site_name" content="Finutia AI"><meta property="og:title" content="MCP Server Connections | Finutia AI"><meta property="og:description" content="Extend Finutia with tools from a compatible server while keeping the connection and capability changes visible."><meta property="og:url" content="https://finutia.com/integrations/mcp/"><meta property="og:image" content="https://finutia.com/og.png"><meta name="twitter:card" content="summary_large_image">
+    <title>MCP Server Connections and Tool Safety | Finutia AI</title><link rel="icon" href="../../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../../styles.css?v=20260907-4">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a><div class="draft-banner" role="note">Draft preview — indexing remains disabled while the website is reviewed.</div>
+    <header class="site-header"><a class="brand" href="../../"><span class="brand-mark" aria-hidden="true">F</span><span>Finutia AI</span></a><nav aria-label="Main navigation"><a href="../">Integrations</a><a href="../../guides/">Guides</a><a href="../../#control">Your control</a></nav><a class="button button-small button-quiet" href="../../app/" data-open-finutia>Open Finutia</a></header>
+    <main class="content-page" id="main">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span aria-hidden="true">/</span><a href="../">Integrations</a><span aria-hidden="true">/</span><span>MCP</span></nav>
+      <p class="eyebrow">Compatible connected servers</p><h1>Extend Finutia through MCP without pretending every tool is built in.</h1>
+      <p class="page-lede">MCP, or Model Context Protocol, is a standard way for other software to offer tools to an AI assistant. A compatible server can extend what Finutia can reach beyond its built-in connectors.</p>
+      <div class="fact-box"><strong>The important distinction</strong><p>Finutia did not write the tools on a server you connect. It keeps their origin visible and treats the server's description as the server's own claim—not as a guarantee from Finutia.</p></div>
+      <h2>How a connection works</h2><ol class="step-list"><li>You provide the compatible server address and, optionally, a label you recognize.</li><li>Finutia validates and protects the address before connecting. If the server requires authorization, the consent happens through its sign-in flow.</li><li>Finutia discovers the tools the server offers and stores a pinned list for your account.</li><li>Those tools can then appear in your assistant's conversations under the server that provided them.</li></ol>
+      <h2>What happens when tools change</h2>
+      <div class="detail-grid"><article class="detail-card"><h3>A tool is added</h3><p>A server review reports and pins the newly offered tool instead of silently blending it into an old list.</p></article><article class="detail-card"><h3>A tool changes</h3><p>Finutia reports the changed definition. The tool is not automatically disabled merely because its description or schema changed.</p></article><article class="detail-card"><h3>A tool disappears</h3><p>A tool the server withdraws stops being offered to the assistant until the server provides it again.</p></article></div>
+      <h2>Credentials and approval</h2><p>Server addresses can contain secret information, so Finutia treats them as credential material: they are validated, encrypted, and kept out of ordinary activity text. OAuth tokens are also encrypted. Calls to connected-server tools flow through Finutia's approval system, where your Auto, Manual, or Bypass setting and applicable rules determine whether the action pauses.</p>
+      <section class="page-cta"><h2>MCP expands the toolset; it does not erase the trust boundary.</h2><p>You can see which server supplied a tool and review what that server currently offers.</p><a class="button button-primary" href="../../guides/approval-modes/">Understand approval modes</a><a class="button button-secondary" href="../">All integrations</a></section>
+    </main>
+    <footer><div><a class="brand footer-brand" href="../../"><span class="brand-mark" aria-hidden="true">F</span><span>Finutia AI</span></a></div><nav aria-label="Legal and support"><a href="../../about/">About</a><a href="../../privacy/">Privacy</a><a href="../../support/">Support</a></nav><p class="copyright">© 2026 Capson Enterprises. Draft copy.</p></footer>
+    <script>if(location.hostname==="finutia.com"||location.hostname==="www.finutia.com"){document.querySelectorAll("[data-open-finutia]").forEach(function(link){link.href="https://app.finutia.com/";});}</script>
+  </body>
+</html>
