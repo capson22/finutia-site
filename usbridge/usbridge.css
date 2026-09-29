@@ -1,30 +1,44 @@
-/* Finutia USBridge page: what styles.css does not already have. Kept apart so styles.css (and its ?v= on every
-   page) stays as it is. */
+/* Finutia USBridge page: what styles.css does not already have, kept plain (Creed, 2026-09-28: "simplify the website
+   wording and paragraphs. Its to flashy right now"). Apart from styles.css, so its ?v= on every page stays as it is. */
 
 .site-header nav a[aria-current="page"] {
   color: var(--text);
 }
 
+.usb-hero {
+  min-height: auto;
+  padding: 4.5rem 0 3.5rem;
+}
+
 .usb-hero h1 {
-  max-width: none;
-  font-size: clamp(3rem, 5.2vw, 4.8rem);
+  max-width: 16ch;
+  font-size: clamp(2.4rem, 4.4vw, 3.6rem);
+  letter-spacing: -0.03em;
 }
 
-.usb-updates h2 {
-  font-size: clamp(2.2rem, 4vw, 3.4rem);
+.usb-page .section {
+  padding: 3rem 0;
+  border-top: 1px solid var(--divider);
 }
 
-.usb-help p:not(.eyebrow) {
-  margin: 0;
+.usb-page h2 {
+  margin-bottom: 1.2rem;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  letter-spacing: -0.02em;
+}
+
+.usb-page .section p,
+.usb-steps li,
+.usb-list li {
   color: var(--text-muted);
 }
 
-.usb-hero .hero-summary strong {
-  color: var(--text);
-  font-weight: 650;
+.usb-page .section a:not(.button) {
+  color: #b8eef5;
+  text-underline-offset: 0.2em;
 }
 
-/* The window, drawn: a device's tools on the left, the devices on the right (as the app has them). */
+/* The window, drawn: a device's tools on the left, the devices on the right, as the app has them. */
 .usb-window {
   padding: 1.1rem;
 }
@@ -32,7 +46,7 @@
 .usb-window-body {
   display: grid;
   margin-top: 1rem;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 0.75rem;
 }
 
@@ -64,8 +78,7 @@
   font-size: 0.9rem;
 }
 
-.usb-tool span,
-.usb-device span {
+.usb-tool span {
   display: block;
   color: var(--text-muted);
   font-size: 0.74rem;
@@ -88,14 +101,14 @@
   padding: 0.12rem 0.5rem;
   border: 1px solid var(--divider);
   border-radius: 999px;
-  color: #c6c0d3 !important;
-  font-size: 0.66rem !important;
+  color: #c6c0d3;
+  font-size: 0.66rem;
   font-weight: 700;
 }
 
 .held .usb-tag {
   border-color: rgb(16 185 129 / 45%);
-  color: #91e8c8 !important;
+  color: #91e8c8;
 }
 
 .usb-link {
@@ -103,12 +116,12 @@
   margin-top: 0.6rem;
   align-items: center;
   gap: 0.5rem;
+  color: #d8d5e2;
   font-family: "Cascadia Mono", Consolas, ui-monospace, monospace;
   font-size: 0.7rem;
-  color: #d8d5e2;
 }
 
-.usb-device .usb-grade {
+.usb-grade {
   display: inline-grid;
   width: 1.45rem;
   height: 1.45rem;
@@ -121,105 +134,82 @@
   font-weight: 800;
 }
 
-.usb-steps .detail-card {
-  min-height: 0;
+.usb-steps,
+.usb-list {
+  max-width: 46rem;
+  margin: 0;
+  padding-left: 1.35rem;
 }
 
-.usb-steps .feature-number {
-  margin-bottom: 1.6rem;
+.usb-steps li + li,
+.usb-list li + li {
+  margin-top: 0.55rem;
+}
+
+.usb-steps strong {
+  color: var(--text);
 }
 
 .usb-features {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.usb-features .feature-card {
-  min-height: 15rem;
-}
-
-.usb-features .feature-number {
-  margin-bottom: 2.2rem;
-}
-
-.usb-requirements {
-  display: grid;
   margin: 0;
-  padding: 0;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0;
-  list-style: none;
+  column-gap: 2.5rem;
 }
 
-.usb-requirements li {
-  padding: 1.1rem 1.4rem 1.1rem 0;
+.usb-features div {
+  padding: 0.9rem 0;
   border-top: 1px solid var(--divider);
+}
+
+.usb-features dt {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.usb-features dd {
+  margin: 0.2rem 0 0;
   color: var(--text-muted);
 }
 
-.usb-requirements li:nth-child(even) {
-  padding-right: 0;
-  padding-left: 1.4rem;
-  border-left: 1px solid var(--divider);
-}
-
-.usb-requirements strong {
-  display: block;
-  color: var(--text);
-}
-
-.usb-requirements a,
-.usb-download a:not(.button),
-.usb-help a {
-  color: #b8eef5;
-  text-underline-offset: 0.2em;
+.usb-note {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
 }
 
 .usb-download-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  align-items: start;
   gap: 1rem;
+}
+
+.usb-download .download-card {
+  min-height: 0;
+}
+
+.usb-download .download-card p {
+  margin-bottom: 1.2rem;
 }
 
 .usb-download .download-card small {
   min-height: 0;
 }
 
-.usb-release {
+.usb-download .usb-release {
   margin: 0.8rem 0 0;
-  color: var(--text-muted);
-  font-size: 0.84rem;
+  font-size: 0.86rem;
 }
 
 .usb-release[data-kind="ready"] strong {
   color: #91e8c8;
 }
 
-.usb-digest {
-  display: block;
-  margin-top: 0.35rem;
-  overflow-wrap: anywhere;
-  color: #817b91;
-  font-family: "Cascadia Mono", Consolas, ui-monospace, monospace;
-  font-size: 0.7rem;
-}
-
-.button-waiting {
-  width: 100%;
-  margin-top: auto;
-  border-color: var(--divider);
-  background: transparent;
-  color: #8d879c;
-  cursor: default;
-}
-
-.button-waiting:hover {
-  transform: none;
+.usb-support {
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 900px) {
-  .usb-features,
   .usb-download-grid {
     grid-template-columns: 1fr;
   }
@@ -227,14 +217,7 @@
 
 @media (max-width: 640px) {
   .usb-window-body,
-  .usb-requirements {
+  .usb-features {
     grid-template-columns: 1fr;
-  }
-
-  .usb-requirements li,
-  .usb-requirements li:nth-child(even) {
-    padding-right: 0;
-    padding-left: 0;
-    border-left: 0;
   }
 }

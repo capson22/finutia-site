@@ -60,25 +60,18 @@
       const released = new Date(release.published_at);
       const when = isNaN(released)
         ? ""
-        : ` · ${released.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })}`;
+        : ` (${released.toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" })})`;
       state.replaceChildren(
-        document.createTextNode("Newest release: "),
-        text(document.createElement("strong"), `USBridge ${version}`),
+        document.createTextNode("Latest version: "),
+        text(document.createElement("strong"), version),
         document.createTextNode(when)
       );
       state.dataset.kind = "ready";
 
       full.href = href;
-      full.textContent = `Full installer, ${Math.round(asset.size / 1048576)} MB`;
-      if (typeof asset.digest === "string" && /^sha256:[0-9a-f]{64}$/.test(asset.digest)) {
-        const digest = text(document.createElement("span"), `SHA-256 ${asset.digest.slice(7).toUpperCase()}`);
-        digest.className = "usb-digest";
-        full.after(digest);
-      }
+      full.textContent = `full installer (${Math.round(asset.size / 1048576)} MB)`;
     })
     .catch(function () {
-      state.textContent = "The newest release is listed on GitHub.";
-      full.href = `https://github.com/${repository}/releases/latest`;
-      full.textContent = "Releases on GitHub";
+      state.textContent = "The latest version is listed on GitHub.";
     });
 }());
