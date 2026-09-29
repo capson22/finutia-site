@@ -1,0 +1,240 @@
+/* Finutia USBridge page: what styles.css does not already have. Kept apart so styles.css (and its ?v= on every
+   page) stays as it is. */
+
+.site-header nav a[aria-current="page"] {
+  color: var(--text);
+}
+
+.usb-hero h1 {
+  max-width: none;
+  font-size: clamp(3rem, 5.2vw, 4.8rem);
+}
+
+.usb-updates h2 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+}
+
+.usb-help p:not(.eyebrow) {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.usb-hero .hero-summary strong {
+  color: var(--text);
+  font-weight: 650;
+}
+
+/* The window, drawn: a device's tools on the left, the devices on the right (as the app has them). */
+.usb-window {
+  padding: 1.1rem;
+}
+
+.usb-window-body {
+  display: grid;
+  margin-top: 1rem;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 0.75rem;
+}
+
+.usb-column-label {
+  margin: 0 0 0.55rem;
+  color: #8d879c;
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.usb-tool,
+.usb-device {
+  padding: 0.8rem 0.85rem;
+  border: 1px solid var(--divider);
+  border-radius: 0.9rem;
+  background: var(--surface-soft);
+}
+
+.usb-tool + .usb-tool,
+.usb-device + .usb-device {
+  margin-top: 0.55rem;
+}
+
+.usb-tool strong,
+.usb-device strong {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.usb-tool span,
+.usb-device span {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.74rem;
+}
+
+.usb-device.held {
+  border-color: rgb(16 185 129 / 55%);
+  background: rgb(16 185 129 / 7%);
+}
+
+.usb-device-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.usb-tag {
+  flex: 0 0 auto;
+  padding: 0.12rem 0.5rem;
+  border: 1px solid var(--divider);
+  border-radius: 999px;
+  color: #c6c0d3 !important;
+  font-size: 0.66rem !important;
+  font-weight: 700;
+}
+
+.held .usb-tag {
+  border-color: rgb(16 185 129 / 45%);
+  color: #91e8c8 !important;
+}
+
+.usb-link {
+  display: flex;
+  margin-top: 0.6rem;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Cascadia Mono", Consolas, ui-monospace, monospace;
+  font-size: 0.7rem;
+  color: #d8d5e2;
+}
+
+.usb-device .usb-grade {
+  display: inline-grid;
+  width: 1.45rem;
+  height: 1.45rem;
+  place-items: center;
+  border-radius: 0.45rem;
+  background: rgb(16 185 129 / 16%);
+  color: #91e8c8;
+  font-family: Inter, ui-sans-serif, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.usb-steps .detail-card {
+  min-height: 0;
+}
+
+.usb-steps .feature-number {
+  margin-bottom: 1.6rem;
+}
+
+.usb-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.usb-features .feature-card {
+  min-height: 15rem;
+}
+
+.usb-features .feature-number {
+  margin-bottom: 2.2rem;
+}
+
+.usb-requirements {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  list-style: none;
+}
+
+.usb-requirements li {
+  padding: 1.1rem 1.4rem 1.1rem 0;
+  border-top: 1px solid var(--divider);
+  color: var(--text-muted);
+}
+
+.usb-requirements li:nth-child(even) {
+  padding-right: 0;
+  padding-left: 1.4rem;
+  border-left: 1px solid var(--divider);
+}
+
+.usb-requirements strong {
+  display: block;
+  color: var(--text);
+}
+
+.usb-requirements a,
+.usb-download a:not(.button),
+.usb-help a {
+  color: #b8eef5;
+  text-underline-offset: 0.2em;
+}
+
+.usb-download-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.usb-download .download-card small {
+  min-height: 0;
+}
+
+.usb-release {
+  margin: 0.8rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.84rem;
+}
+
+.usb-release[data-kind="ready"] strong {
+  color: #91e8c8;
+}
+
+.usb-digest {
+  display: block;
+  margin-top: 0.35rem;
+  overflow-wrap: anywhere;
+  color: #817b91;
+  font-family: "Cascadia Mono", Consolas, ui-monospace, monospace;
+  font-size: 0.7rem;
+}
+
+.button-waiting {
+  width: 100%;
+  margin-top: auto;
+  border-color: var(--divider);
+  background: transparent;
+  color: #8d879c;
+  cursor: default;
+}
+
+.button-waiting:hover {
+  transform: none;
+}
+
+@media (max-width: 900px) {
+  .usb-features,
+  .usb-download-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .usb-window-body,
+  .usb-requirements {
+    grid-template-columns: 1fr;
+  }
+
+  .usb-requirements li,
+  .usb-requirements li:nth-child(even) {
+    padding-right: 0;
+    padding-left: 0;
+    border-left: 0;
+  }
+}

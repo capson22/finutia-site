@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#0d0d14">
+    <meta name="description" content="Finutia USBridge connects a USB diagnostic tool plugged into one Windows device to another device on your network, with a live link grade, Programming Mode, and updates that install themselves.">
+    <link rel="canonical" href="https://finutia.com/usbridge/">
+    <meta property="og:type" content="website"><meta property="og:site_name" content="Finutia"><meta property="og:title" content="Finutia USBridge"><meta property="og:description" content="Plug a USB tool in once and use it from another device on your network."><meta property="og:url" content="https://finutia.com/usbridge/"><meta property="og:image" content="https://finutia.com/og.png"><meta name="twitter:card" content="summary_large_image">
+    <title>Finutia USBridge | Share USB Diagnostic Tools Between Devices</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles.css?v=20260907-4">
+    <link rel="stylesheet" href="usbridge.css?v=20260928-1">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="draft-banner" role="note">Draft preview — indexing remains disabled while the website is reviewed.</div>
+    <header class="site-header"><a class="brand" href="../"><span class="brand-mark" aria-hidden="true">F</span><span>Finutia AI</span></a><nav aria-label="Main navigation"><a href="../#possibilities">What it does</a><a href="../integrations/">Integrations</a><a href="../guides/">Guides</a><a href="./" aria-current="page">USBridge</a></nav><a class="button button-small button-quiet" href="#download">Download USBridge</a></header>
+
+    <main id="main">
+      <section class="hero usb-hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Finutia USBridge</p>
+          <h1 id="hero-title">One tool.<br><span>Every device.</span></h1>
+          <p class="hero-summary">
+            USBridge connects a USB tool plugged into one Windows device — an MDI 2, a CarDAQ, a pass-thru — to
+            another device on your network, where the software that needs it runs. It grades the link before a job
+            starts, <strong>holds the tool through a knocked cable</strong>, and shows every device who has it.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#download">Download for Windows</a>
+            <a class="button button-secondary" href="#how">How it works</a>
+          </div>
+          <p class="hero-note">For Windows 10 and 11, 64-bit. Preview builds are not code-signed yet.</p>
+        </div>
+
+        <div class="conversation-card usb-window" aria-label="Example: the USBridge window on a device that shares its tools">
+          <div class="conversation-topbar">
+            <div class="mini-brand"><span class="mini-mark" aria-hidden="true">F</span><span>USBridge · Tech 2</span></div>
+            <span class="status"><span aria-hidden="true"></span> Grade A</span>
+          </div>
+          <div class="usb-window-body">
+            <div>
+              <p class="usb-column-label">Tools on Tech 2</p>
+              <div class="usb-tool"><strong>MDI 2</strong><span>In Station 1</span></div>
+              <div class="usb-tool"><strong>CarDAQ-Plus 3</strong><span>Plugged in · not connected</span></div>
+            </div>
+            <div>
+              <p class="usb-column-label">Devices</p>
+              <div class="usb-device held">
+                <div class="usb-device-top"><strong>Station 1</strong><span class="usb-tag">Yours</span></div>
+                <span>Job: module programming</span>
+                <div class="usb-link"><span class="usb-grade">A</span>2.4 ms · jitter 1.1 · loss 0%</div>
+              </div>
+              <div class="usb-device">
+                <div class="usb-device-top"><strong>Station 2</strong><span class="usb-tag">Free</span></div>
+                <span>Connect a tool here</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="What USBridge promises">
+        <p><strong>One device at a time.</strong> A tool is only ever connected to one device, and every device can see which.</p>
+        <p><strong>Know the link first.</strong> Latency, jitter and loss, graded A to C, measured all the time.</p>
+        <p><strong>Updates itself.</strong> Signed releases, installed only when nothing is connected.</p>
+      </section>
+
+      <section class="section" id="how" aria-labelledby="how-title">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">Two installs, then one button.</h2>
+          <p>
+            The same app goes on every device. At install you say what each one does: shares the tools plugged into
+            it, or receives tools from the others.
+          </p>
+        </div>
+        <div class="detail-grid usb-steps">
+          <article class="detail-card">
+            <span class="feature-number">01</span>
+            <h3>Where the tool plugs in</h3>
+            <p>This device shares its tools. USBridge lists what is plugged in, and which device each tool is connected to.</p>
+          </article>
+          <article class="detail-card">
+            <span class="feature-number">02</span>
+            <h3>Where the software runs</h3>
+            <p>This device receives tools. Any Windows device on your network, or reached over Tailscale when it is not.</p>
+          </article>
+          <article class="detail-card">
+            <span class="feature-number">03</span>
+            <h3>Connect, work, release</h3>
+            <p>Choose the device and press Connect: the tool appears there as if it were plugged in. Release it from either side when the job is done.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="features" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="eyebrow">Built for jobs that must not drop</p>
+          <h2 id="features-title">A flash is not the moment to find out the link is bad.</h2>
+        </div>
+        <div class="usb-features">
+          <article class="feature-card">
+            <span class="feature-number">LINK</span>
+            <h3>A grade for every device</h3>
+            <p>Each device is measured every second — latency, jitter and loss — and graded A to C. A speed test shows what the link carries.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">PROGRAMMING</span>
+            <h3>Programming Mode</h3>
+            <p>Turn it on for a flash or a coding job: the link is watched closely, the device stays awake, and nobody can take the device mid-job.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">READINESS</span>
+            <h3>A check before you start</h3>
+            <p>A readiness checklist runs before Programming Mode: the tool, the link and the settings that break long jobs.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">CABLES</span>
+            <h3>A knocked cable comes back</h3>
+            <p>A tool unplugged for a moment is held for its device and reconnects on its own when it returns.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">AWAY</span>
+            <h3>Held while you step away</h3>
+            <p>If the device sharing a tool sleeps or leaves, the other device keeps the tool for as long as you set, so a walk to the parts counter does not end the job.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-number">RECORDS</span>
+            <h3>A record of every job</h3>
+            <p>Which tool, which device, how long, and the link through it — kept on both sides, with a note, and exported when support asks.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section control-section usb-updates" id="updates" aria-labelledby="updates-title">
+        <div class="control-copy">
+          <p class="eyebrow">Updates</p>
+          <h2 id="updates-title">Every device stays current.</h2>
+          <p>
+            No one has to go round the shop installing anything. Each device looks for a new release once a day. It installs only after nothing has been connected for ten
+            minutes, and never in Programming Mode. The window closes for a moment and comes back on the new version.
+            Every release is signed by Finutia and checked before it runs.
+          </p>
+        </div>
+        <div class="control-panel" aria-label="Example: Settings, Updates">
+          <div class="control-row active">
+            <div><strong>USBridge 1.0.250 is ready to install</strong><span>It installs by itself once nothing has been connected for 10 minutes.</span></div>
+            <span class="pill">Ready</span>
+          </div>
+          <div class="control-row">
+            <div><strong>Not now: Programming Mode is on</strong><span>An update always waits for the job to finish.</span></div>
+            <span class="pill">Waiting</span>
+          </div>
+          <div class="control-row">
+            <div><strong>Updated from 1.0.247 to 1.0.249</strong><span>The last update, and when it went in.</span></div>
+            <span class="pill">Done</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="requirements" aria-labelledby="requirements-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Before you install</p>
+          <h2 id="requirements-title">What each device needs.</h2>
+          <p>The installer checks for these and says what is missing. It does not install them for you.</p>
+        </div>
+        <ul class="usb-requirements">
+          <li><strong>Windows 10 or 11, 64-bit</strong>On every device.</li>
+          <li><strong>An administrator, once</strong>USBridge runs as a Windows service, so installing it asks for one.</li>
+          <li><strong>On a device that shares its tools</strong><a href="https://github.com/dorssel/usbipd-win/releases" rel="noopener">usbipd-win</a>, free and open source.</li>
+          <li><strong>On a device that receives tools</strong><a href="https://github.com/vadimgrn/usbip-win2/releases" rel="noopener">usbip-win2</a> 0.9.8.1 or newer, free, open source and signed by Microsoft.</li>
+          <li><strong>A network between them</strong>The same shop network, or Tailscale when a device is somewhere else.</li>
+          <li><strong>One device per tool at a time</strong>Several devices can share and receive; each tool goes to one device until it is released.</li>
+        </ul>
+      </section>
+
+      <section class="section downloads-section usb-download" id="download" aria-labelledby="download-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Download</p>
+          <h2 id="download-title">Get USBridge.</h2>
+          <p>The same download for every device. It fetches the newest release and checks Finutia's signature before anything runs.</p>
+        </div>
+        <div class="usb-download-grid">
+          <article class="download-card">
+            <span class="platform-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><path d="M2.5 4.7 10.4 3.6v7.6H2.5V4.7Zm8.9-1.2 10.1-1.4v9.1H11.4V3.5ZM2.5 12.2h7.9v7.6l-7.9-1.1v-6.5Zm8.9 0h10.1v9.1l-10.1-1.4v-7.7Z"/></svg>
+            </span>
+            <h3>Windows</h3>
+            <p>For Windows 10 and 11, 64-bit. A small installer that downloads the newest release from GitHub, checks it, and starts it.</p>
+            <a class="button button-primary" href="Finutia-USBridge-Web-Setup.exe" download>Download for Windows</a>
+            <p class="usb-release" data-usb-release role="status" aria-live="polite">Looking up the newest release…</p>
+            <small>
+              Not code-signed yet, so Windows may show a warning: choose <em>More info</em>, then <em>Run anyway</em>.
+              Prefer one file with everything in it? <a data-usb-full href="https://github.com/capson22/Finutia-USBridge-Releases/releases/latest">Releases on GitHub</a>
+            </small>
+          </article>
+          <article class="download-card">
+            <span class="platform-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false"><path d="m7.5 5.2-1.3-2a.65.65 0 0 1 1.1-.7l1.4 2.1A8.8 8.8 0 0 1 12 4c1.2 0 2.3.2 3.3.6l1.4-2.1a.65.65 0 1 1 1.1.7l-1.3 2A7.4 7.4 0 0 1 20 11H4a7.4 7.4 0 0 1 3.5-5.8ZM8 8.3a.9.9 0 1 0 0-1.8.9.9 0 0 0 0 1.8Zm8 0a.9.9 0 1 0 0-1.8.9.9 0 0 0 0 1.8ZM4 12h16v6.5a1.5 1.5 0 0 1-1.5 1.5H17v2a1 1 0 0 1-2 0v-2H9v2a1 1 0 0 1-2 0v-2H5.5A1.5 1.5 0 0 1 4 18.5V12Zm-2 1a1 1 0 0 1 2 0v5a1 1 0 0 1-2 0v-5Zm18 0a1 1 0 0 1 2 0v5a1 1 0 0 1-2 0v-5Z"/></svg>
+            </span>
+            <h3>Android</h3>
+            <p>For tablets at the bench. Not available yet.</p>
+            <span class="button button-waiting" aria-disabled="true">Coming later</span>
+            <small>Windows is the only platform for now.</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="closing-section usb-help" aria-labelledby="help-title">
+        <p class="eyebrow">Help</p>
+        <h2 id="help-title">A tool that will not connect?</h2>
+        <p>Email <a href="mailto:support@finutia.com">support@finutia.com</a> with the job's export from the Sessions page.</p>
+      </section>
+    </main>
+
+    <footer><div><a class="brand footer-brand" href="../"><span class="brand-mark" aria-hidden="true">F</span><span>Finutia AI</span></a><p>Draft website for Capson Enterprises.</p></div><nav aria-label="Legal and support"><a href="./">USBridge</a><a href="../about/">About</a><a href="../terms/">Terms</a><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav><p class="copyright">© 2026 Capson Enterprises. Draft copy.</p></footer>
+    <script src="usbridge.js?v=20260928-1"></script>
+  </body>
+</html>

@@ -22,6 +22,15 @@ The three `download/latest/<platform>/` pages read the matching stable update ma
 app. A download link is only shown when the signed manifest points to a canonical GitHub Release asset in
 `capson22/finutia-site`.
 
+## Finutia USBridge (`usbridge/`)
+
+The USBridge tab. `usbridge/Finutia-USBridge-Web-Setup.exe` is the small installer built from the private USBridge
+repository (`host/scripts/build-web-setup.ps1`, which checks it against the live release and copies it here): it
+downloads the newest release from the public `capson22/Finutia-USBridge-Releases` and checks Finutia's update
+signature before it runs anything. It only changes when its code or the update keys do, not with each release.
+`usbridge.js` reads the newest release from GitHub's API (the one GitHub address a page may read) for the version
+line and the full installer's link.
+
 ## Domain cutover (owner action)
 
 Do not add `CNAME` or change GitHub Pages' custom-domain setting until every word has been approved.
