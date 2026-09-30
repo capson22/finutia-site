@@ -179,9 +179,25 @@
 
 .usb-download-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: start;
   gap: 1rem;
+}
+
+/* The Android card's install steps: small, numbered, under the button. */
+.usb-install-steps {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--text-muted);
+  font-size: 0.86rem;
+}
+
+.usb-install-steps li + li {
+  margin-top: 0.35rem;
+}
+
+.usb-install-steps strong {
+  color: var(--text);
 }
 
 .usb-download .download-card {

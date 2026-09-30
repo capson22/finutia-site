@@ -11,7 +11,7 @@
     <title>Finutia USBridge | Share USB Tools Between Devices</title>
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../styles.css?v=20260907-4">
-    <link rel="stylesheet" href="usbridge.css?v=20260928-2">
+    <link rel="stylesheet" href="usbridge.css?v=20260930-1">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -30,7 +30,7 @@
             <a class="button button-primary" href="#download">Download for Windows</a>
             <a class="button button-secondary" href="#how">How it works</a>
           </div>
-          <p class="hero-note">Windows 10 and 11, 64-bit.</p>
+          <p class="hero-note">Windows 10 and 11, 64-bit. Android 13 or newer.</p>
         </div>
 
         <div class="conversation-card usb-window" aria-label="Example: the USBridge window">
@@ -85,6 +85,7 @@
         <h2 id="requirements-title">Requirements</h2>
         <ul class="usb-list">
           <li>Windows 10 or 11, 64-bit, on each device.</li>
+          <li>For the Android app: Android 13 or newer.</li>
           <li>Administrator rights to install.</li>
           <li>On the device the tool is plugged into: <a href="https://github.com/dorssel/usbipd-win/releases" rel="noopener">usbipd-win</a>.</li>
           <li>On the device that uses the tool: <a href="https://github.com/vadimgrn/usbip-win2/releases" rel="noopener">usbip-win2</a> 0.9.8.1 or newer.</li>
@@ -107,7 +108,15 @@
           </article>
           <article class="download-card">
             <h3>Android</h3>
-            <p>Not available yet.</p>
+            <p>For tablets and phones with Android 13 or newer. Once installed, it keeps itself up to date.</p>
+            <a class="button button-primary" data-usb-apk href="https://github.com/capson22/Finutia-USBridge-Releases/releases/latest/download/Finutia-USBridge.apk">Download for Android</a>
+            <p class="usb-release" data-usb-apk-release role="status" aria-live="polite">Looking up the latest version…</p>
+            <ol class="usb-install-steps" data-usb-apk-steps>
+              <li>On the tablet, tap <strong>Download for Android</strong>. If the browser warns about the file, choose <em>Download anyway</em>.</li>
+              <li>Open the downloaded file.</li>
+              <li>If Android asks, allow your browser to install apps, then go back.</li>
+              <li>Tap <strong>Install</strong>.</li>
+            </ol>
           </article>
         </div>
       </section>
@@ -119,6 +128,6 @@
     </main>
 
     <footer><div><a class="brand footer-brand" href="../"><span class="brand-mark" aria-hidden="true">F</span><span>Finutia AI</span></a><p>Draft website for Capson Enterprises.</p></div><nav aria-label="Legal and support"><a href="./">USBridge</a><a href="../about/">About</a><a href="../terms/">Terms</a><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav><p class="copyright">© 2026 Capson Enterprises. Draft copy.</p></footer>
-    <script src="usbridge.js?v=20260928-2"></script>
+    <script src="usbridge.js?v=20260930-1"></script>
   </body>
 </html>

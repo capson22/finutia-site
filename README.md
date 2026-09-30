@@ -29,7 +29,10 @@ repository (`host/scripts/build-web-setup.ps1`, which checks it against the live
 downloads the newest release from the public `capson22/Finutia-USBridge-Releases` and checks Finutia's update
 signature before it runs anything. It only changes when its code or the update keys do, not with each release.
 `usbridge.js` reads the newest release from GitHub's API (the one GitHub address a page may read) for the version
-line and the full installer's link.
+line and the full installer's link. The Android download links to the newest release's app at its fixed address,
+`https://github.com/capson22/Finutia-USBridge-Releases/releases/latest/download/Finutia-USBridge.apk`; the script
+shows its version, or "Not available yet." (button hidden) while the newest release has no app. The app checks
+Finutia's update signature itself for every update after the first install.
 
 ## Domain cutover (owner action)
 
