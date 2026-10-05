@@ -65,6 +65,37 @@ body {
   line-height: 1.65;
 }
 
+body.theme-company {
+  --background: #15100d;
+  --background-deep: #0d0907;
+  --surface: #241a14;
+  --surface-raised: #302219;
+  --surface-soft: #1c1511;
+  --surface-rgb: 36 26 20;
+  --surface-soft-rgb: 28 21 17;
+  --primary: #9a6034;
+  --primary-light: #d6a16d;
+  --primary-dark: #75401f;
+  --primary-hover: #a66a3d;
+  --primary-hover-dark: #814723;
+  --primary-rgb: 154 96 52;
+  --primary-light-rgb: 214 161 109;
+  --secondary: #bc8255;
+  --secondary-rgb: 188 130 85;
+  --eyebrow: #d9a271;
+  --link: #e0ad7a;
+  --accent-soft: #d6a16d;
+  --accent-contrast: #f0cda6;
+  --headline-start: #f0c494;
+  --headline-end: #bc7a46;
+  --text: #f4ebe1;
+  --text-muted: #c5b4a4;
+  --text-soft: #e2d2c1;
+  --text-subtle: #a89280;
+  --text-faint: #aa9685;
+  --divider: #493629;
+}
+
 body.theme-assistant {
   --background: #0d0d14;
   --background-deep: #09090f;
