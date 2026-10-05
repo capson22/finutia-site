@@ -138,30 +138,30 @@ body.theme-usbridge {
   --surface-soft: #16130f;
   --surface-rgb: 29 26 21;
   --surface-soft-rgb: 22 19 15;
-  --primary: #E39B2D;
-  --primary-light: #f0b454;
-  --primary-dark: #a96700;
-  --primary-hover: #efa938;
-  --primary-hover-dark: #ba7609;
-  --primary-rgb: 227 155 45;
-  --primary-light-rgb: 240 180 84;
-  --secondary: #E39B2D;
-  --secondary-rgb: 227 155 45;
-  --eyebrow: #f0b454;
-  --link: #f0b454;
-  --accent-soft: #f0b454;
-  --accent-contrast: #ffd99c;
+  --primary: #f28c28;
+  --primary-light: #ffad55;
+  --primary-dark: #c96718;
+  --primary-hover: #ff9a34;
+  --primary-hover-dark: #d77320;
+  --primary-rgb: 242 140 40;
+  --primary-light-rgb: 255 173 85;
+  --secondary: #f28c28;
+  --secondary-rgb: 242 140 40;
+  --eyebrow: #ffb36a;
+  --link: #ffb36a;
+  --accent-soft: #ffad55;
+  --accent-contrast: #ffd2a0;
   --headline-start: #f3f0ea;
-  --headline-end: #E39B2D;
+  --headline-end: #f28c28;
   --text: #f3f0ea;
   --text-muted: #b5aea2;
   --text-soft: #ddd6ca;
   --text-subtle: #91887b;
   --text-faint: #a39a8d;
   --divider: #3c3529;
-  --warning: #E39B2D;
-  --warning-rgb: 227 155 45;
-  --warning-text: #ffd99c;
+  --warning: #f28c28;
+  --warning-rgb: 242 140 40;
+  --warning-text: #ffd2a0;
 }
 
 .theme-usbridge .brand-mark,
