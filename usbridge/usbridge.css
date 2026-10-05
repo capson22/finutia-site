@@ -34,7 +34,7 @@
 }
 
 .usb-page .section a:not(.button) {
-  color: #b8eef5;
+  color: var(--link);
   text-underline-offset: 0.2em;
 }
 
@@ -52,7 +52,7 @@
 
 .usb-column-label {
   margin: 0 0 0.55rem;
-  color: #8d879c;
+  color: var(--text-subtle);
   font-size: 0.7rem;
   font-weight: 750;
   letter-spacing: 0.08em;
@@ -101,7 +101,7 @@
   padding: 0.12rem 0.5rem;
   border: 1px solid var(--divider);
   border-radius: 999px;
-  color: #c6c0d3;
+  color: var(--text-soft);
   font-size: 0.66rem;
   font-weight: 700;
 }
@@ -116,7 +116,7 @@
   margin-top: 0.6rem;
   align-items: center;
   gap: 0.5rem;
-  color: #d8d5e2;
+  color: var(--text-soft);
   font-family: "Cascadia Mono", Consolas, ui-monospace, monospace;
   font-size: 0.7rem;
 }
