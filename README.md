@@ -1,9 +1,12 @@
-# Finutia AI website
+# Finutia website
 
-Static marketing, download, legal-placeholder, and web-app holding pages for Finutia AI.
+Static company, product, download, legal-placeholder, and web-app holding pages for Finutia.
 
-This repository contains a **draft preview**. Its copy and legal text are not approved for
-the custom domain. Search indexing is disabled until that approval is complete.
+Finutia is a software company owned by Capson Enterprises. The public site currently has
+top-level product pages for Finutia AI Assistant and USBridge, plus Home and Contact pages.
+
+The custom domain currently serves a **draft preview**. Its copy and legal text are not approved
+for launch. Search indexing is disabled until that approval is complete.
 
 ## Preview locally
 
@@ -22,11 +25,11 @@ The three `download/latest/<platform>/` pages read the matching stable update ma
 app. A download link is only shown when the signed manifest points to a canonical GitHub Release asset in
 `capson22/finutia-site`.
 
-## Domain cutover (owner action)
+## Hosting
 
-Do not add `CNAME` or change GitHub Pages' custom-domain setting until every word has been approved.
-The staged `app/` page is a source copy for the separate `app.finutia.com` VPS host; it cannot be hosted
-at that subdomain by the same GitHub Pages site.
+GitHub Pages serves the marketing site at `finutia.com`. The staged `app/` page is a source copy for
+the separate `app.finutia.com` VPS host; it cannot be hosted at that subdomain by the same GitHub Pages
+site.
 
 ## Search launch gate
 
