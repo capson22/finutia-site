@@ -248,17 +248,16 @@ footer nav a:focus-visible {
   filter: invert(1);
 }
 
-.product-title-brand {
-  padding: 0.38rem 0.58rem;
-  border-radius: 0.65rem;
-  background: #fff;
-  box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+.site-header nav a.product-logo-link {
+  display: block;
+  padding: 0.3rem 0.12rem;
+  line-height: 0;
 }
 
-.product-title-logo {
+.nav-product-logo {
   display: block;
   width: auto;
-  height: 1.75rem;
+  height: 1.15rem;
 }
 
 .brand-mark,
