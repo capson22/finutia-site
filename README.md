@@ -25,6 +25,18 @@ The three `download/latest/<platform>/` pages read the matching stable update ma
 app. A download link is only shown when the signed manifest points to a canonical GitHub Release asset in
 `capson22/finutia-site`.
 
+## Finutia USBridge (`usbridge/`)
+
+`usbridge/Finutia-USBridge-Web-Setup.exe` is the small installer built from the private USBridge
+repository. It downloads the newest release from the public `capson22/Finutia-USBridge-Releases`
+repository and checks Finutia's update signature before it runs anything. It changes only when its
+own code or the update keys change, not with each release.
+
+`usbridge/usbridge.js` reads the newest release from GitHub's API for the version line and full
+installer link. The Android download uses the newest release's fixed APK address. The page hides
+that button and says the app is unavailable when the newest release does not contain an APK. After
+the first install, the app checks Finutia's update signature for every update.
+
 ## Hosting
 
 GitHub Pages serves the marketing site at `finutia.com`. The staged `app/` page is a source copy for

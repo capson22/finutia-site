@@ -5,48 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     <meta name="theme-color" content="#0d0d14">
-    <meta name="description" content="USBridge is a Finutia software product. Verified product and release details will be published here.">
+    <meta name="description" content="Finutia USBridge lets you use a USB tool plugged into one Windows device from another device on your network.">
     <link rel="canonical" href="https://finutia.com/usbridge/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Finutia">
-    <meta property="og:title" content="USBridge | Finutia">
-    <meta property="og:description" content="The product home for USBridge, a Finutia software product.">
-    <meta property="og:url" content="https://finutia.com/usbridge/">
-    <meta name="twitter:card" content="summary">
-    <title>USBridge | Finutia</title>
+    <meta property="og:type" content="website"><meta property="og:site_name" content="Finutia"><meta property="og:title" content="Finutia USBridge"><meta property="og:description" content="Use a USB tool plugged into one Windows device from another device on your network."><meta property="og:url" content="https://finutia.com/usbridge/"><meta property="og:image" content="https://finutia.com/og.png"><meta name="twitter:card" content="summary_large_image">
+    <title>Finutia USBridge | Share USB Tools Between Devices</title>
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../styles.css?v=20261004-1">
+    <link rel="stylesheet" href="usbridge.css?v=20260930-1">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="draft-banner" role="note">Draft preview — indexing remains disabled while the website is reviewed.</div>
-    <header class="site-header">
-      <a class="brand" href="../"><span class="brand-mark" aria-hidden="true">F</span><span>Finutia</span></a>
-      <nav class="product-nav" aria-label="Main navigation">
-        <a href="../">Home</a>
-        <a href="../finutia/">Finutia AI Assistant</a>
-        <a class="active" aria-current="page" href="./">USBridge</a>
-        <a href="../contact/">Contact</a>
-      </nav>
-    </header>
-    <main class="product-intro" id="main">
-      <p class="eyebrow">A Finutia product</p>
-      <h1>USBridge</h1>
-      <p class="page-lede">USBridge now has a dedicated home on the Finutia website.</p>
-      <div class="fact-box">
-        <strong>Product details are being finalized.</strong>
-        <p>Verified information about what USBridge does, who it is for, availability, setup, and support will be published here from the product's own documentation. This page stays intentionally brief until that information is ready.</p>
-      </div>
-      <section class="page-cta">
-        <h2>Have a question about USBridge?</h2>
-        <p>Tell us which product you are asking about when you contact us.</p>
-        <a class="button button-primary" href="../contact/">Contact us</a>
+    <header class="site-header"><a class="brand" href="../"><span class="brand-mark" aria-hidden="true">F</span><span>Finutia</span></a><nav class="product-nav" aria-label="Main navigation"><a href="../">Home</a><a href="../finutia/">Finutia AI Assistant</a><a class="active" aria-current="page" href="./">USBridge</a><a href="../contact/">Contact</a></nav><a class="button button-small button-quiet" href="#download">Download USBridge</a></header>
+
+    <main id="main" class="usb-page">
+      <section class="hero usb-hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Finutia USBridge</p>
+          <h1 id="hero-title">Share USB tools between devices.</h1>
+          <p class="hero-summary">
+            Plug a USB tool into one Windows device and use it from another device on your network.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#download">Download for Windows</a>
+            <a class="button button-secondary" href="#how">How it works</a>
+          </div>
+          <p class="hero-note">Windows 10 and 11, 64-bit. Android 13 or newer.</p>
+        </div>
+
+        <div class="conversation-card usb-window" aria-label="Example: the USBridge window">
+          <div class="conversation-topbar">
+            <div class="mini-brand"><span class="mini-mark" aria-hidden="true">F</span><span>USBridge · Tech 2</span></div>
+            <span class="status"><span aria-hidden="true"></span> Grade A</span>
+          </div>
+          <div class="usb-window-body">
+            <div>
+              <p class="usb-column-label">Tools on Tech 2</p>
+              <div class="usb-tool"><strong>Debug probe</strong><span>In Station 1</span></div>
+              <div class="usb-tool"><strong>Hardware key</strong><span>Not connected</span></div>
+            </div>
+            <div>
+              <p class="usb-column-label">Devices</p>
+              <div class="usb-device held">
+                <div class="usb-device-top"><strong>Station 1</strong><span class="usb-tag">Yours</span></div>
+                <div class="usb-link"><span class="usb-grade">A</span>2.4 ms · loss 0%</div>
+              </div>
+              <div class="usb-device">
+                <div class="usb-device-top"><strong>Station 2</strong><span class="usb-tag">Free</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="how" aria-labelledby="how-title">
+        <h2 id="how-title">How it works</h2>
+        <ol class="usb-steps">
+          <li>Install USBridge on the device the tool is plugged into.</li>
+          <li>Install USBridge on the device that needs the tool.</li>
+          <li>Press <strong>Connect</strong>. The tool works as if it were plugged in there. Press <strong>Release</strong> when you are done.</li>
+        </ol>
+      </section>
+
+      <section class="section" id="features" aria-labelledby="features-title">
+        <h2 id="features-title">Features</h2>
+        <dl class="usb-features">
+          <div><dt>One device at a time</dt><dd>Each tool connects to one device at a time. Every device shows who has it.</dd></div>
+          <div><dt>Connection grade</dt><dd>Latency, jitter and loss are measured every second and graded A to C.</dd></div>
+          <div><dt>Protected Mode</dt><dd>For sensitive reads and writes. The device stays awake, and no one can take the device until you turn it off.</dd></div>
+          <div><dt>Readiness check</dt><dd>Checks the tool, the connection and power settings before a sensitive job.</dd></div>
+          <div><dt>Reconnects</dt><dd>A tool that drops for a moment reconnects on its own.</dd></div>
+          <div><dt>Job records</dt><dd>Each connection is recorded and can be exported for support.</dd></div>
+          <div><dt>Automatic updates</dt><dd>USBridge checks for updates once a day and installs them only when no tool is connected.</dd></div>
+          <div><dt>Local network or Tailscale</dt><dd>Devices connect over your network, or over Tailscale when they are apart.</dd></div>
+        </dl>
+      </section>
+
+      <section class="section" id="requirements" aria-labelledby="requirements-title">
+        <h2 id="requirements-title">Requirements</h2>
+        <ul class="usb-list">
+          <li>Windows 10 or 11, 64-bit, on each device.</li>
+          <li>For the Android app: Android 13 or newer.</li>
+          <li>Administrator rights to install.</li>
+          <li>On the device the tool is plugged into: <a href="https://github.com/dorssel/usbipd-win/releases" rel="noopener">usbipd-win</a>.</li>
+          <li>On the device that uses the tool: <a href="https://github.com/vadimgrn/usbip-win2/releases" rel="noopener">usbip-win2</a> 0.9.8.1 or newer.</li>
+        </ul>
+        <p class="usb-note">The installer installs these for you.</p>
+      </section>
+
+      <section class="section usb-download" id="download" aria-labelledby="download-title">
+        <h2 id="download-title">Download</h2>
+        <div class="usb-download-grid">
+          <article class="download-card">
+            <h3>Windows</h3>
+            <p>Downloads the latest version, checks it, and starts the installer.</p>
+            <a class="button button-primary" href="Finutia-USBridge-Web-Setup.exe" download>Download for Windows</a>
+            <p class="usb-release" data-usb-release role="status" aria-live="polite">Looking up the latest version…</p>
+            <small>
+              Windows may show a warning because the installer is not code-signed yet. Choose <em>More info</em>, then
+              <em>Run anyway</em>. Or get the <a data-usb-full href="https://github.com/capson22/Finutia-USBridge-Releases/releases/latest">full installer on GitHub</a>.
+            </small>
+          </article>
+          <article class="download-card">
+            <h3>Android</h3>
+            <p>For tablets and phones with Android 13 or newer. Once installed, it keeps itself up to date.</p>
+            <a class="button button-primary" data-usb-apk href="https://github.com/capson22/Finutia-USBridge-Releases/releases/latest/download/Finutia-USBridge.apk">Download for Android</a>
+            <p class="usb-release" data-usb-apk-release role="status" aria-live="polite">Looking up the latest version…</p>
+            <ol class="usb-install-steps" data-usb-apk-steps>
+              <li>On the tablet, tap <strong>Download for Android</strong>. If the browser warns about the file, choose <em>Download anyway</em>.</li>
+              <li>Open the downloaded file.</li>
+              <li>If Android asks, allow your browser to install apps, then go back.</li>
+              <li>Tap <strong>Install</strong>.</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="section usb-support" aria-labelledby="support-title">
+        <h2 id="support-title">Support</h2>
+        <p>Email <a href="mailto:support@finutia.com">support@finutia.com</a>.</p>
       </section>
     </main>
-    <footer>
-      <div><a class="brand footer-brand" href="../"><span class="brand-mark" aria-hidden="true">F</span><span>Finutia</span></a><p>USBridge is a Finutia product.</p></div>
-      <nav aria-label="Products and support"><a href="../finutia/">Finutia AI Assistant</a><a href="./">USBridge</a><a href="../contact/">Contact</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a></nav>
-      <p class="copyright">© 2026 Capson Enterprises. Finutia is a software company owned by Capson Enterprises. Draft copy.</p>
-    </footer>
+
+    <footer><div><a class="brand footer-brand" href="../"><span class="brand-mark" aria-hidden="true">F</span><span>Finutia</span></a><p>USBridge is a Finutia product.</p></div><nav aria-label="Products and support"><a href="../finutia/">Finutia AI Assistant</a><a href="./">USBridge</a><a href="../contact/">Contact</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a></nav><p class="copyright">© 2026 Capson Enterprises. Finutia is a software company owned by Capson Enterprises. Draft copy.</p></footer>
+    <script src="usbridge.js?v=20260930-1"></script>
   </body>
 </html>
