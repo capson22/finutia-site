@@ -240,6 +240,14 @@ footer nav a:focus-visible {
   text-decoration: none;
 }
 
+.company-logo {
+  display: block;
+  flex: 0 0 auto;
+  width: auto;
+  height: 1.75rem;
+  filter: invert(1);
+}
+
 .brand-mark,
 .mini-mark {
   display: inline-grid;
@@ -1004,6 +1012,10 @@ footer {
 
 .footer-brand {
   margin-bottom: 0.7rem;
+}
+
+.footer-brand .company-logo {
+  height: 1.65rem;
 }
 
 footer p {
