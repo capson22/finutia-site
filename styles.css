@@ -65,37 +65,6 @@ body {
   line-height: 1.65;
 }
 
-body.theme-company {
-  --background: #15100d;
-  --background-deep: #0d0907;
-  --surface: #241a14;
-  --surface-raised: #302219;
-  --surface-soft: #1c1511;
-  --surface-rgb: 36 26 20;
-  --surface-soft-rgb: 28 21 17;
-  --primary: #9a6034;
-  --primary-light: #d6a16d;
-  --primary-dark: #75401f;
-  --primary-hover: #a66a3d;
-  --primary-hover-dark: #814723;
-  --primary-rgb: 154 96 52;
-  --primary-light-rgb: 214 161 109;
-  --secondary: #bc8255;
-  --secondary-rgb: 188 130 85;
-  --eyebrow: #d9a271;
-  --link: #e0ad7a;
-  --accent-soft: #d6a16d;
-  --accent-contrast: #f0cda6;
-  --headline-start: #f0c494;
-  --headline-end: #bc7a46;
-  --text: #f4ebe1;
-  --text-muted: #c5b4a4;
-  --text-soft: #e2d2c1;
-  --text-subtle: #a89280;
-  --text-faint: #aa9685;
-  --divider: #493629;
-}
-
 body.theme-assistant {
   --background: #0d0d14;
   --background-deep: #09090f;
@@ -128,47 +97,6 @@ body.theme-assistant {
   --warning: #f59e0b;
   --warning-rgb: 245 158 11;
   --warning-text: #ffd98a;
-}
-
-body.theme-usbridge {
-  --background: #11100e;
-  --background-deep: #0b0a08;
-  --surface: #1d1a15;
-  --surface-raised: #282219;
-  --surface-soft: #16130f;
-  --surface-rgb: 29 26 21;
-  --surface-soft-rgb: 22 19 15;
-  --primary: #ff6600;
-  --primary-light: #ff9a4f;
-  --primary-dark: #e85a00;
-  --primary-hover: #ff7a1a;
-  --primary-hover-dark: #f06810;
-  --primary-rgb: 255 102 0;
-  --primary-light-rgb: 255 154 79;
-  --secondary: #ff6600;
-  --secondary-rgb: 255 102 0;
-  --eyebrow: #ff9a4f;
-  --link: #ff9a4f;
-  --accent-soft: #ff9a4f;
-  --accent-contrast: #ffd2ad;
-  --headline-start: #f3f0ea;
-  --headline-end: #ff6600;
-  --text: #f3f0ea;
-  --text-muted: #b5aea2;
-  --text-soft: #ddd6ca;
-  --text-subtle: #91887b;
-  --text-faint: #a39a8d;
-  --divider: #3c3529;
-  --warning: #ff6600;
-  --warning-rgb: 255 102 0;
-  --warning-text: #ffd2ad;
-}
-
-.theme-usbridge .brand-mark,
-.theme-usbridge .mini-mark,
-.theme-usbridge .button-primary,
-.theme-usbridge .send-dot {
-  color: #1a1207;
 }
 
 a {
