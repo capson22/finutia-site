@@ -148,7 +148,7 @@
 
       link.href = releaseUrl;
       link.hidden = false;
-      link.textContent = `Download Finutia ${payload.version}`;
+      link.textContent = `Download Finutia AI ${payload.version}`;
       state.textContent = `Latest stable release: ${payload.version}`;
       state.dataset.kind = "ready";
     })
