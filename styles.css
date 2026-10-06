@@ -196,18 +196,6 @@ footer nav a:focus-visible {
   filter: invert(1);
 }
 
-.site-header nav a.product-logo-link {
-  display: block;
-  padding: 0.3rem 0.12rem;
-  line-height: 0;
-}
-
-.nav-product-logo {
-  display: block;
-  width: auto;
-  height: 1.15rem;
-}
-
 .brand-mark,
 .mini-mark {
   display: inline-grid;
