@@ -3,10 +3,10 @@
 Static company, product, download, legal-placeholder, and web-app holding pages for Finutia.
 
 Finutia is a software company owned by Capson Enterprises. The public site currently has
-top-level product pages for Finutia AI Assistant and USBridge, plus Home and Contact pages.
+top-level product pages for Finutia AI and USBridge, plus Home and Contact pages.
 
-The custom domain currently serves a **draft preview**. Its copy and legal text are not approved
-for launch. Search indexing is disabled until that approval is complete.
+The draft banners have been removed from the site. Its copy and legal text are still not
+approved for launch, and search indexing stays disabled until that approval is complete.
 
 ## Preview locally
 
