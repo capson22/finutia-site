@@ -7,21 +7,21 @@
   --surface-soft: #15171a;
   --surface-rgb: 26 29 33;
   --surface-soft-rgb: 21 23 26;
-  --primary: #69727d;
-  --primary-light: #aab0b8;
-  --primary-dark: #48515c;
-  --primary-hover: #78828e;
-  --primary-hover-dark: #56606b;
-  --primary-rgb: 105 114 125;
-  --primary-light-rgb: 170 176 184;
-  --secondary: #9199a3;
-  --secondary-rgb: 145 153 163;
-  --eyebrow: #c0c4c9;
-  --link: #d0d3d7;
-  --accent-soft: #bec3ca;
-  --accent-contrast: #e3e5e8;
-  --headline-start: #f1f2f3;
-  --headline-end: #aeb4bc;
+  --primary: #6b7582;
+  --primary-light: #bac1ca;
+  --primary-dark: #4a5460;
+  --primary-hover: #7a8592;
+  --primary-hover-dark: #58636f;
+  --primary-rgb: 107 117 130;
+  --primary-light-rgb: 186 193 202;
+  --secondary: #9ca5b0;
+  --secondary-rgb: 156 165 176;
+  --eyebrow: #ccd2d9;
+  --link: #dbe0e6;
+  --accent-soft: #c9d0d8;
+  --accent-contrast: #eceff3;
+  --headline-start: #f6f8fa;
+  --headline-end: #bcc4cd;
   --text: #f1f2f3;
   --text-muted: #a9adb3;
   --text-soft: #d5d8dc;
@@ -29,9 +29,9 @@
   --text-faint: #969ca4;
   --divider: #343941;
   --success: #10b981;
-  --warning: #aab0b8;
-  --warning-rgb: 170 176 184;
-  --warning-text: #d9dce0;
+  --warning: #bac1ca;
+  --warning-rgb: 186 193 202;
+  --warning-text: #e1e5ea;
   --max-width: 1180px;
   --radius-small: 12px;
   --radius-medium: 20px;
@@ -63,40 +63,6 @@ body {
   color: var(--text);
   font-size: 1rem;
   line-height: 1.65;
-}
-
-body.theme-assistant {
-  --background: #0d0d14;
-  --background-deep: #09090f;
-  --surface: #16162a;
-  --surface-raised: #1e1e35;
-  --surface-soft: #12121e;
-  --surface-rgb: 22 22 42;
-  --surface-soft-rgb: 18 18 30;
-  --primary: #7c3aed;
-  --primary-light: #a776ff;
-  --primary-dark: #5521bb;
-  --primary-hover: #6d28d9;
-  --primary-hover-dark: #4c1d95;
-  --primary-rgb: 124 58 237;
-  --primary-light-rgb: 167 118 255;
-  --secondary: #06b6d4;
-  --secondary-rgb: 6 182 212;
-  --eyebrow: #9fe9f3;
-  --link: #b8eef5;
-  --accent-soft: #c4a3ff;
-  --accent-contrast: #dfd1ff;
-  --headline-start: #cbb3ff;
-  --headline-end: #86e8f2;
-  --text: #f2f0f7;
-  --text-muted: #a9a4b8;
-  --text-soft: #d8d5e2;
-  --text-subtle: #817b91;
-  --text-faint: #9690a3;
-  --divider: #2d2d4a;
-  --warning: #f59e0b;
-  --warning-rgb: 245 158 11;
-  --warning-text: #ffd98a;
 }
 
 a {
