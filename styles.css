@@ -1375,6 +1375,121 @@ footer p {
   }
 }
 
+/* AI Assistant page: real app screenshots */
+.hero-with-phone {
+  grid-template-columns: minmax(0, 1.2fr) minmax(16rem, 0.8fr);
+}
+
+.app-shot,
+.phone-shot {
+  margin: 0;
+}
+
+.app-shot img,
+.phone-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.app-shot img {
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-small);
+  box-shadow: 0 24px 70px rgb(0 0 0 / 35%);
+}
+
+.phone-shot {
+  justify-self: center;
+  width: min(100%, 21rem);
+  padding: 0.6rem;
+  border: 1px solid var(--divider);
+  border-radius: 2.4rem;
+  background: var(--surface-raised);
+  box-shadow: 0 30px 80px rgb(0 0 0 / 45%);
+}
+
+.phone-shot img {
+  border-radius: 1.9rem;
+}
+
+.shot-section {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin: 0 auto 4rem;
+}
+
+.shot-note,
+.fine {
+  margin: 1rem 0 0;
+  color: var(--text-subtle);
+  font-size: 0.85rem;
+}
+
+.showcase {
+  display: grid;
+  margin-bottom: 1rem;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  align-items: center;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius-medium);
+  background: linear-gradient(145deg, rgb(var(--surface-rgb) / 72%), rgb(var(--surface-soft-rgb) / 70%));
+}
+
+.showcase-copy > p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.showcase-copy .feature-number {
+  margin-bottom: 2rem;
+}
+
+.feature-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.feature-grid-3 .feature-card {
+  min-height: 0;
+}
+
+.connectors-shot {
+  align-self: start;
+}
+
+.mcp-panel {
+  margin-top: 1rem;
+}
+
+.control-shot {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 900px) {
+  .hero-with-phone,
+  .showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .connectors-shot {
+    max-width: 26rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .feature-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-shot {
+    width: min(100%, 18rem);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
