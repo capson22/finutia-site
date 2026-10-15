@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     <meta name="theme-color" content="#111316">
-    <meta name="description" content="Finutia USBridge lets you use a USB tool plugged into one Windows device from another device on your network.">
+    <meta name="description" content="Finutia USBridge shares USB tools between devices - in the next room, on your VPN or across the internet - as if the tool were plugged in locally.">
     <link rel="canonical" href="https://finutia.com/usbridge/">
-    <meta property="og:type" content="website"><meta property="og:site_name" content="Finutia"><meta property="og:title" content="Finutia USBridge"><meta property="og:description" content="Use a USB tool plugged into one Windows device from another device on your network."><meta property="og:url" content="https://finutia.com/usbridge/"><meta property="og:image" content="https://finutia.com/og.png"><meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="website"><meta property="og:site_name" content="Finutia"><meta property="og:title" content="Finutia USBridge"><meta property="og:description" content="Share USB tools between devices - in the next room, on your VPN or across the internet - as if plugged in locally."><meta property="og:url" content="https://finutia.com/usbridge/"><meta property="og:image" content="https://finutia.com/og.png"><meta name="twitter:card" content="summary_large_image">
     <title>Finutia USBridge | Share USB Tools Between Devices</title>
     <link rel="icon" href="../favicon.svg?v=20261005-1" type="image/svg+xml">
     <link rel="stylesheet" href="../styles.css?v=20261005-8">
-    <link rel="stylesheet" href="usbridge.css?v=20261004-1">
+    <link rel="stylesheet" href="usbridge.css?v=20261014-3">
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -23,7 +23,7 @@
           <p class="eyebrow">Finutia USBridge</p>
           <h1 id="hero-title">Share USB tools between devices.</h1>
           <p class="hero-summary">
-            Plug a USB tool into one Windows device and use it from another device on your network.
+            Plug a USB tool into one device and use it from another, whether it is in the next room, on your VPN or across the internet, as if it were plugged in there. For shops, labs, industry and any team whose USB tool is not where its software is.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#download">Download for Windows</a>
@@ -32,64 +32,89 @@
           <p class="hero-note">Windows 10 and 11, 64-bit. Android 13 or newer.</p>
         </div>
 
-        <div class="conversation-card usb-window" aria-label="Example: the USBridge window">
-          <div class="conversation-topbar">
-            <div class="mini-brand"><span class="mini-mark" aria-hidden="true">F</span><span>USBridge · Tech 2</span></div>
-            <span class="status"><span aria-hidden="true"></span> Grade A</span>
-          </div>
-          <div class="usb-window-body">
-            <div>
-              <p class="usb-column-label">Tools on Tech 2</p>
-              <div class="usb-tool"><strong>Debug probe</strong><span>In Station 1</span></div>
-              <div class="usb-tool"><strong>Hardware key</strong><span>Not connected</span></div>
-            </div>
-            <div>
-              <p class="usb-column-label">Devices</p>
-              <div class="usb-device held">
-                <div class="usb-device-top"><strong>Station 1</strong><span class="usb-tag">Yours</span></div>
-                <div class="usb-link"><span class="usb-grade">A</span>2.4 ms · loss 0%</div>
-              </div>
-              <div class="usb-device">
-                <div class="usb-device-top"><strong>Station 2</strong><span class="usb-tag">Free</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <figure class="usb-frame usb-hero-shot">
+          <div class="usb-frame-bar" aria-hidden="true"><span>Finutia USBridge</span></div>
+          <img src="img/usbridge-tools-and-devices.webp" width="1900" height="1141" alt="The USBridge window on Windows: this device's tools on the left, a card for each device in the account on the right. The devices and names shown are made up.">
+        </figure>
       </section>
 
       <section class="section" id="how" aria-labelledby="how-title">
         <h2 id="how-title">How it works</h2>
         <ol class="usb-steps">
-          <li>Install USBridge on the device the tool is plugged into.</li>
-          <li>Install USBridge on the device that needs the tool.</li>
-          <li>Press <strong>Connect</strong>. The tool works as if it were plugged in there. Press <strong>Release</strong> when you are done.</li>
+          <li>Install USBridge on each device. A Windows device can share its tools, receive tools from other devices, or both. The Android app shares its tools.</li>
+          <li>Put the devices in one account. Create the account on one device, then join it from each of the others with a short code. Devices never search the network for each other, and there are no addresses to type.</li>
+          <li>On the device the tool is plugged into, pick the tool and press <strong>Connect</strong> to a device. The tool works there as if it were plugged in. Press <strong>Release</strong> when you are done.</li>
         </ol>
       </section>
 
       <section class="section" id="features" aria-labelledby="features-title">
-        <h2 id="features-title">Features</h2>
+        <h2 id="features-title">What it does</h2>
         <dl class="usb-features">
-          <div><dt>One device at a time</dt><dd>Each tool connects to one device at a time. Every device shows who has it.</dd></div>
-          <div><dt>Connection grade</dt><dd>Latency, jitter and loss are measured every second and graded A to C.</dd></div>
-          <div><dt>Protected Mode</dt><dd>For sensitive reads and writes. The device stays awake, and no one can take the device until you turn it off.</dd></div>
-          <div><dt>Readiness check</dt><dd>Checks the tool, the connection and power settings before a sensitive job.</dd></div>
-          <div><dt>Reconnects</dt><dd>A tool that drops for a moment reconnects on its own.</dd></div>
-          <div><dt>Job records</dt><dd>Each connection is recorded and can be exported for support.</dd></div>
-          <div><dt>Automatic updates</dt><dd>USBridge checks for updates once a day and installs them only when no tool is connected.</dd></div>
-          <div><dt>Local network or Tailscale</dt><dd>Devices connect over your network, or over Tailscale when they are apart.</dd></div>
+          <div><dt>Devices in one account</dt><dd>Devices join an account with a code. Each device lists the others in its account and nothing else.</dd></div>
+          <div><dt>Share and receive</dt><dd>Every Windows device can share its tools and receive tools from others. The Android app shares its tools.</dd></div>
+          <div><dt>Every connection at once</dt><dd>Tools can go over every connection a device has at once (Wi-Fi, Ethernet, mobile data), or over one connection you choose. If one drops, the tool carries on over the other.</dd></div>
+          <div><dt>Link figures for each pair</dt><dd>For each pair of devices there is one set of figures: latency, jitter and loss, with a grade from A to C. Both devices show the same figures, measured on the route the tool's data takes.</dd></div>
+          <div><dt>Speed test</dt><dd>Either device can start a speed test. It shows the slower direction, and both devices keep the result.</dd></div>
+          <div><dt>Protected Mode</dt><dd>For work that must not be interrupted. The device stays awake, and its tools cannot be released or taken over until you turn it off.</dd></div>
+          <div><dt>Job records</dt><dd>Each connection is recorded with the link over time and a USB traffic recording. A job can be exported for support.</dd></div>
+          <div><dt>Remote Desktop button</dt><dd>A device's card has a button that opens Remote Desktop to that device.</dd></div>
+          <div><dt>One device at a time</dt><dd>A tool connects to one device at a time, and every device shows who has it.</dd></div>
+          <div><dt>Automatic updates</dt><dd>USBridge updates itself. On Windows it installs updates only when no tool is connected.</dd></div>
         </dl>
+      </section>
+
+      <section class="section usb-shots" id="screens" aria-labelledby="screens-title">
+        <h2 id="screens-title">In the app</h2>
+        <p class="usb-shots-lead">The USBridge window on Windows. The devices and names shown are made up.</p>
+
+        <figure class="usb-shot">
+          <div class="usb-frame">
+            <div class="usb-frame-bar" aria-hidden="true"><span>Finutia USBridge</span></div>
+            <img src="img/usbridge-link-monitor.webp" width="1900" height="691" loading="lazy" alt="The Link monitor page, with one row for each of four devices showing a grade from A to C, a plain-words verdict, latency, loss and how the device is reached. Below are the connection in use and two buttons, Run speed test and Readiness check.">
+          </div>
+          <figcaption>Link monitor: one row for each device, with its grade, latency, loss and the way it is reached.</figcaption>
+        </figure>
+
+        <figure class="usb-shot">
+          <div class="usb-frame">
+            <div class="usb-frame-bar" aria-hidden="true"><span>Finutia USBridge</span></div>
+            <img src="img/usbridge-speed-test.webp" width="1900" height="691" loading="lazy" alt="The Speed test page for one device: a dial showing 184 Mbps, and a table of the last result with speed, latency, jitter, packet loss and the round trip through the tool, each with what it means.">
+          </div>
+          <figcaption>Speed test: one speed, the slower direction, with latency, jitter, loss and the round trip through the tool.</figcaption>
+        </figure>
+
+        <figure class="usb-shot">
+          <div class="usb-frame">
+            <div class="usb-frame-bar" aria-hidden="true"><span>Finutia USBridge</span></div>
+            <img src="img/usbridge-usb-log.webp" width="1900" height="1141" loading="lazy" alt="The USB traffic log: totals for packets, bytes in and out, and errors, then a table of transfers with time, direction, endpoint, type, size, status and the decoded data.">
+          </div>
+          <figcaption>USB log: every transfer between a tool and the device it is in, with its direction, size, status and data.</figcaption>
+        </figure>
+
+        <figure class="usb-shot">
+          <div class="usb-frame">
+            <div class="usb-frame-bar" aria-hidden="true"><span>Finutia USBridge</span></div>
+            <img src="img/usbridge-sessions.webp" width="1900" height="691" loading="lazy" alt="The Sessions page: a list of jobs, each with the tool, the device, when it ran, a job note, and an Export button. One job notes a dropout and Protected Mode.">
+          </div>
+          <figcaption>Sessions: a record of each job, with a note you write and an Export button.</figcaption>
+        </figure>
+
+        <figure class="usb-shot">
+          <div class="usb-frame">
+            <div class="usb-frame-bar" aria-hidden="true"><span>Finutia USBridge</span></div>
+            <img src="img/usbridge-settings-account.webp" width="1302" height="600" loading="lazy" alt="Part of Settings, the USBridge server section: a one-time code to type on another device, and the list of devices in the account with Remove buttons.">
+          </div>
+          <figcaption>Settings: show a code to add a device to the account. The devices in the account are listed below it.</figcaption>
+        </figure>
       </section>
 
       <section class="section" id="requirements" aria-labelledby="requirements-title">
         <h2 id="requirements-title">Requirements</h2>
         <ul class="usb-list">
-          <li>Windows 10 or 11, 64-bit, on each device.</li>
-          <li>For the Android app: Android 13 or newer.</li>
+          <li>Windows 10 or 11, 64-bit, on each device that shares or receives tools.</li>
+          <li>For the Android app, which shares its tools: Android 13 or newer.</li>
           <li>Administrator rights to install.</li>
-          <li>On the device the tool is plugged into: <a href="https://github.com/dorssel/usbipd-win/releases" rel="noopener">usbipd-win</a>.</li>
-          <li>On the device that uses the tool: <a href="https://github.com/vadimgrn/usbip-win2/releases" rel="noopener">usbip-win2</a> 0.9.8.1 or newer.</li>
         </ul>
-        <p class="usb-note">The installer installs these for you.</p>
       </section>
 
       <section class="section usb-download" id="download" aria-labelledby="download-title">

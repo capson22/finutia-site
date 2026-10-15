@@ -154,7 +154,7 @@
   display: grid;
   margin: 0;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 2.5rem;
+  column-gap: 2rem;
 }
 
 .usb-features div {
@@ -235,5 +235,109 @@
   .usb-window-body,
   .usb-features {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Screenshots of the Windows app, in its dark theme, each in a plain window frame drawn here (not in the picture). */
+.usb-frame {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 14%);
+  border-radius: 0.7rem;
+  background: #1b1e23;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 14px 36px rgb(0 0 0 / 35%);
+}
+
+.usb-frame-bar {
+  display: flex;
+  height: 2rem;
+  padding: 0 0.9rem;
+  align-items: center;
+  border-bottom: 1px solid rgb(255 255 255 / 8%);
+  background: #23272d;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+.usb-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.usb-hero-shot {
+  width: 100%;
+  min-width: 0;
+}
+
+.usb-shots-lead {
+  max-width: 46rem;
+  margin: 0 0 2rem;
+}
+
+.usb-shot {
+  display: grid;
+  margin: 0;
+  padding: 2.25rem 0;
+  align-items: center;
+  grid-template-columns: minmax(0, 2.3fr) minmax(0, 1fr);
+  gap: 2rem;
+  border-top: 1px solid var(--divider);
+}
+
+.usb-shot:first-of-type {
+  border-top: 0;
+  padding-top: 0.5rem;
+}
+
+.usb-shot:nth-of-type(even) .usb-frame {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.usb-shot:nth-of-type(even) figcaption {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.usb-shot:nth-of-type(even) {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.3fr);
+}
+
+.usb-shot figcaption {
+  color: var(--text-muted);
+  font-size: 1rem;
+  max-width: 24rem;
+}
+
+@media (max-width: 860px) {
+  .usb-shot,
+  .usb-shot:nth-of-type(even) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .usb-shot:nth-of-type(even) .usb-frame,
+  .usb-shot:nth-of-type(even) figcaption {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .usb-shot figcaption {
+    max-width: none;
+    font-size: 0.95rem;
+  }
+}
+
+.usb-hero {
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(2rem, 4vw, 4rem);
+}
+
+@media (max-width: 900px) {
+  .usb-hero {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
